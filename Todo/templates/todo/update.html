@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block head %}
+	<title>Update Task</title>
+{% endblock %}
+
+{% block body %}
+	<div class="update_todo">
+		<h1>UPDATE LIST</h1>
+		<form method="post" class="form_add_task">
+			{% csrf_token %}
+			<input autofocus type="text" name="task{{ todo_id }}" placeholder="Update Task" id="task">
+			<input type="submit" value="UPDATE TASK">
+		</form>
+	</div>
+{% endblock %}

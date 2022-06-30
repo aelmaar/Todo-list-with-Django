@@ -1,0 +1,45 @@
+{% extends './base.html' %}
+
+{% block head %}
+	<title>TodoList Items</title>
+{% endblock %}
+
+{% block body %}
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="logout">logout</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<div>
+			<h1>TO DO LIST</h1>
+			<form method="post" class="form_add_task">
+				{% csrf_token %}
+				<input autofocus type="text" name="task" placeholder="Create Task" id="task">
+				<input type="submit" value="ADD TASK">
+			</form>
+
+			<div>
+				<ul>
+					{% for task in user_tasks %}
+						<li>
+							<h4>{{ task.name }}</h4>
+							<div>
+								<a href="update_todo/{{ task.id }}"><i class="fa-solid fa-pen-to-square"></i></a>
+								<a href="delete_todo/{{ task.id }}"><i class="fa-solid fa-trash"></i></a>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		
+	</section>
+
+	
+{% endblock %}

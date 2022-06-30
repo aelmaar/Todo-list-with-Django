@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+header nav {
+	max-height: 150px;
+}
+
+header nav ul {
+	list-style: none;
+	background: rgba(0,0,0,.1);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 20px;
+	color: rgba(0,0,0,.7);
+	font-weight: bold;
+}
+
+section {
+	margin-top: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section div {
+	line-height: 50px;
+}
+
+section div h1 {
+	text-align: center;
+}
+
+section div ul {
+	list-style: none;
+}
+
+section div ul li {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid rgba(0, 0, 0, .4);
+	margin-top: 8px;
+	padding: 0 5px;
+}
+
+.fa-solid {
+	font-size: 20px;
+}
+
+.fa-pen-to-square {
+	margin-right: 5px;
+	color: rgba(0, 70, 0, .9);
+}
+
+.fa-trash {
+	color: rgba(255, 0, 0, .7);
+}
+
+.form_add_task {
+	display: flex;
+}
+
+#id {
+	width: 250px;
+	padding: 10px;
+	outline: none;
+}
+
+input[type="submit"] {
+	padding: 10px 5px;
+	cursor: pointer;
+	border: none;
+	background: rgba(255,0,0,.7);
+	color: white;
+	font-weight: bold;
+	transition: .4s background;
+}
+
+input[type="submit"]:hover {
+	background: rgba(255, 0, 0, .6);
+}
+
+.form_register {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.form_register h1 {
+	margin-bottom: 20px;
+}
+
+.form_register input {
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.update_todo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.update_todo h1 {
+	text-align: center;
+}
