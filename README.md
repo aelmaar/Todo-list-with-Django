@@ -1,7 +1,8 @@
 # Todo-list-with-Django
 Building Todo list app with user authentication in Django \
 \
-At this project, I focused more on the backend than the front end :smiley:, also I don't used built in forms provided by Django since I want to build things from scratch, and It was a funny project :relaxed:
+At this project, I focused more on the backend than the front end :smiley:, also I don't used built in forms provided by Django since I want to build things from scratch, and It was a funny project :relaxed: \
+I found difficulty to host my app on Heroku but its worth doing [APP](https://djangotodolist2022.herokuapp.com).
 ## Setup
 1- make sure you have django version 4 installed. \
 2- Run migrate command to create database file with actual model fields
